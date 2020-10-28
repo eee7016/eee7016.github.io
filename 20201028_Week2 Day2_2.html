@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Theme Simply Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .bg-1{
+                background-color:rgb(127, 231, 214);
+                color: #307960;
+            }
+            .bg-2{
+                background-color:rgb(127, 207, 231);
+                color: #3a4585;
+            }
+            .bg-3{
+                background-color:rgb(240, 199, 152);
+                color: #995241;
+            }
+            .container-fluid {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .navbar {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size:12px;
+                letter-spacing: 5px;
+            }           
+            .navbar-nav li a:hover {
+                color: #1abc9c ;
+            }
+            body {
+                font: 20px "Monterrat", sans-serif;
+                line-height: 1.8;
+                color: #f5f6f7;
+            }
+            .margin {
+                margin-bottom: 45px
+            }
+        </style>
+    </head>
+    <Body>
+        <!--bootstrap 페이지 
+            https://getbootstrap.com/docs/4.5/examples/navbar-static/
+            가서 navbar static 가서 f12 눌러(또는 파일로 다운로드 받아서도 가능) 
+            그럼 코드가 나와-->
+        <nav class="navbar navbar-default">
+            <a class="navbar-brand" href="https://getbootstrap.com/docs/4.5/examples/navbar-static/#">Top navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/navbar-static/#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://getbootstrap.com/docs/4.5/examples/navbar-static/#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="https://getbootstrap.com/docs/4.5/examples/navbar-static/#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <div class="container-fluid bg-1 text-center">
+            <h3>Who Am I</h3>
+            <img src="shiba.webp" alt="shiba" class="img-circle">
+            <h3>I'm an adventurer.</h3>
+        </div>
+        <div class="container-fluid bg-2 text-center">
+            <h3>Who Am I</h3>
+            <!--아래의 경우 loren ipsum 검색해서 아무 paragraph나 입력한것-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare venenatis libero, in pretium ex fringilla quis. Etiam tristique facilisis varius. Nulla dignissim dignissim nisl eget dignissim. Integer sed leo at nibh semper tristique. Aliquam lorem nulla, porta a nisl nec, gravida vestibulum nisl. Suspendisse at massa purus. Phasellus mattis dui nec viverra auctor. Cras velit odio, dictum sed elementum at, iaculis et nunc. Fusce molestie placerat diam, eget mollis mauris porttitor vitae. Vestibulum commodo mauris eget ante tincidunt blandit. Nullam tincidunt leo non magna dapibus luctus. Vivamus luctus ultrices ullamcorper. Donec sit amet metus id dui aliquam accumsan ac nec lorem. Proin ullamcorper porttitor lectus, vitae sollicitudin sem efficitur nec. Sed condimentum nisl vel convallis aliquet.</p>
+            <a href="http://www.naver.com" class="btn btn-default bg-lg">
+            <span class="glyphicon glyphicon-search"></span> NAVER</a>
+        </div>
+        <div class="container-fluid bg-3 text-center">
+            <h3>Who Am I</h3>
+            <div class="row">
+                <div class="col-sm-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare venenatis libero, in pretium ex fringilla quis. Etiam tristique facilisis varius. Nulla dignissim dignissim nisl eget dignissim. Integer sed leo at nibh semper tristique. Aliquam lorem nulla, porta a nisl nec, gravida vestibulum nisl. Suspendisse at massa purus. Phasellus mattis dui nec viverra auctor. Cras velit odio, dictum sed elementum at, iaculis et nunc. Fusce molestie placerat diam, eget mollis mauris porttitor vitae. Vestibulum commodo mauris eget ante tincidunt blandit. Nullam tincidunt leo non magna dapibus luctus. Vivamus luctus ultrices ullamcorper. Donec sit amet metus id dui aliquam accumsan ac nec lorem. Proin ullamcorper porttitor lectus, vitae sollicitudin sem efficitur nec. Sed condimentum nisl vel convallis aliquet.</p>
+                    <img src="shiba.webp" alt="shiba" class="img-responsive" style="width:100%"></div>                
+                <div class="col-sm-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare venenatis libero, in pretium ex fringilla quis. Etiam tristique facilisis varius. Nulla dignissim dignissim nisl eget dignissim. Integer sed leo at nibh semper tristique. Aliquam lorem nulla, porta a nisl nec, gravida vestibulum nisl. Suspendisse at massa purus. Phasellus mattis dui nec viverra auctor. Cras velit odio, dictum sed elementum at, iaculis et nunc. Fusce molestie placerat diam, eget mollis mauris porttitor vitae. Vestibulum commodo mauris eget ante tincidunt blandit. Nullam tincidunt leo non magna dapibus luctus. Vivamus luctus ultrices ullamcorper. Donec sit amet metus id dui aliquam accumsan ac nec lorem. Proin ullamcorper porttitor lectus, vitae sollicitudin sem efficitur nec. Sed condimentum nisl vel convallis aliquet.</p>
+                    <img src="shiba.webp" alt="shiba" class="img-responsive" style="width:100%"></div>
+                <div class="col-sm-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare venenatis libero, in pretium ex fringilla quis. Etiam tristique facilisis varius. Nulla dignissim dignissim nisl eget dignissim. Integer sed leo at nibh semper tristique. Aliquam lorem nulla, porta a nisl nec, gravida vestibulum nisl. Suspendisse at massa purus. Phasellus mattis dui nec viverra auctor. Cras velit odio, dictum sed elementum at, iaculis et nunc. Fusce molestie placerat diam, eget mollis mauris porttitor vitae. Vestibulum commodo mauris eget ante tincidunt blandit. Nullam tincidunt leo non magna dapibus luctus. Vivamus luctus ultrices ullamcorper. Donec sit amet metus id dui aliquam accumsan ac nec lorem. Proin ullamcorper porttitor lectus, vitae sollicitudin sem efficitur nec. Sed condimentum nisl vel convallis aliquet.</p>
+                    <img src="shiba.webp" alt="shiba" class="img-responsive" style="width:100%"></div>
+            </div>
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <p>Made by Choi</p>
+        </footer>
+        <!--hover: 커서를 올렸을 때만 색을 바꾸는 것-->
+    </Body>
+</html>
